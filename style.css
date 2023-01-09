@@ -1,0 +1,168 @@
+
+
+body {
+    background-image: url(/img/3.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.9rem;
+}
+.Logo{
+    color: wheat;
+    font-family: 'Sevillana';font-size: 27px;
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.fix-me {
+    position: fixed;
+    top: 340px;
+    background-color: rgb(87, 88, 77);
+    color: aliceblue;
+    padding: 10px 15px;
+    border: none;
+    display: inline;
+
+}
+
+.fix-me a {
+    text-decoration: none;
+    color: wheat;
+}
+
+
+#main-container {
+    max-width: 760px;
+    min-height: 600px;
+    margin: 5em auto 5em auto;
+    position: relative;
+    background-image: url(/img/10.jpg);
+    overflow: hidden;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    /* border-right: 5px red solid;
+    border-left: 5px blue solid;
+    border-top: 5px yellow solid;
+    border-bottom: pink solid; */
+}
+
+@media screen and (max-width: 768px) {
+    #fh5co-main {
+        margin: 2em .5em 5em .5em;
+    }
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-left: 50px;
+} 
+
+nav a {
+    color: wheat;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+.header{
+    /* background: lightskyblue; */
+    grid-area: header;
+}
+
+.item2{
+    background: none;
+/* grid-area: ; */
+}
+.item3{
+/* background: paleturquoise; */
+grid-area:content;
+font-size: 18px;
+justify-self: center;
+padding: 5px;
+color: antiquewhite;
+
+}
+.item3 h1{
+    font-size: 18px;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+
+}
+#container > div{
+    /* background-color: springgreen; */
+    font-size: 17px;
+    margin: 3px;
+    padding: 4px;
+    width: 200px;
+    
+}
+
+
+.item4{
+    /* this has be because when i want to move the footer it always change the width */
+    /* background: lightpink; */
+    padding-left: 25%;
+    grid-area: footer;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    font-size: 18px;
+    color: wheat;
+}
+
+.container{
+    padding-left:10px;
+font-size: 1.5em;
+min-height: 300px;
+width: 100%;
+/* background: lightgreen; */
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-gap: 10px;
+grid-template-areas: 
+"header header header"
+"content content content"
+"advert advert advert"
+      "footer"; 
+}
+@media (min-width: 300px){
+.container{
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "advert header"
+    "advert content"
+    "advert footer";
+}
+}
+@media (min-width: 400px){
+.container{
+   grid-template-areas: 
+   "header header header"
+   "content content content"
+   "advert advert advert"
+         "footer"; 
+}
+}
+
+
+/* Eduction */
