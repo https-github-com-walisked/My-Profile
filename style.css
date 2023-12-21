@@ -1,4 +1,6 @@
-
+* {
+    color: black;
+}
 
 body {
     background-image: url(/Asset/pexels-photo-326333.jpeg);
@@ -24,7 +26,7 @@ body {
     position: fixed;
     top: 340px;
     background-color: rgb(87, 88, 77);
-    color: aliceblue;
+    color: black;
     padding: 10px 15px;
     border: none;
     display: inline;
@@ -33,7 +35,7 @@ body {
 
 .fix-me a {
     text-decoration: none;
-    color: wheat;
+    color: black;
 }
 
 
